@@ -1,0 +1,24 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+/* grid rule */
+.row {clear: both;} /*each row should stay below the content above it*/
+
+.column{float: left;} /*this makes them actual columns*/
+
+footer {
+    background-color: red;
+    font-size: 1.2rem;
+}
+footer h2 {
+    text-transform: uppercase;
+    margin: 1rem 0 .3rem 0;
+}
+
+.preventcollapse:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
