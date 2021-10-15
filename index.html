@@ -1,102 +1,60 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <meta charset = "UTF-8">
-    <link rel = "stylesheet" href = "file.css">
+    <link rel = "stylesheet" href = "CSS/small.css">
     <title>Roger Schnee Builder</title>
     <meta name = "author" content="Roger Schnee">
     <meta name = "description" content="Business page for Roger Schnee Builder">
     <meta name = "viewport" content= "width = device-width, initial-scale=1">
     <style>
-        ul li {
-            display: inline;
-            padding-right: 100px;
+
+        
+        @media only screen and (min-width: 768px){
+        
+            .medium-6{width:50%;}
+            
+            nav button {display:none;} /*--hides the hamburger button at medium sized width --*/
+            nav ul {display: block;}
+            nav li {width: 25%; float: left;}
         }
-        .mainheader{
-            display: inline;
-        }
-        .title>h1{
-            display: inline;
+        @media only screen and (min-width: 1024px){
+            .large-3 {width:25%}
+
+            nav ul{margin-left: 2vw;}
+            nav li{width: auto;}
+            nav a{padding: .7rem 1rem;}
         }
         
-        #rightmenu{
-            float: right;
-            width: 30%;
-            margin-bottom: 20px;
-            border-block-style: solid;
-            border-color: black;
-        }
-        .content>h2{
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .title>nav{
-            float: right;
-            width: 75%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .content>h2, .content>h1{
-           display: inline;
-        }
-        html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-
-/* grid rule */
-.row {clear: both;} /*each row should stay below the content above it*/
-
-.column{float: left; margin: 0 0 .75rem 0; display:inline;} /*this makes them actual columns*/
-
-.small-12{width:100%;}
-h1{color:black;}
-@media only screen and (min-width: 768px){
-    .medium-6{width:50%;}
-    h1{color: red;}
-}
-@media only screen and (min-width: 1024px){
-    .large-3 {width:25%}
-}
-footer {
-    background-color: red;
-    font-size: 1.2rem;
-    color: white;
-}
-footer h2 {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 1rem 0 .3rem 0;
-}
-
-.preventcollapse:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
         
     </style>
 </head>
 <body>
-    <header id="mainheader">
-        <div class="title">
-            <h1>Roger Schnee Builder</h1>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>New Construction</li>
-                        <li>Remodel</li>
-                        <li>Contact Us</li>
-                     </ul>
-                </nav>
-         </div>
+    <header class="preventcollapse">
+        <div class="row limited">
+            <section class = "column small-12">
+                <h1>Roger Schnee Builder</h1>
+        </section>
+        </div>
     </header>
-    <div class = "content">
-        <h1>Main Content goes here.</h1>
-    </div>
+    <nav class ="preventcollapse">
+        <div class ="row limited">
+            <button id="hamburgerNav">&#9776;</button>
+            <ul id="listNav">
+                <li class="active"><a href = "#">Home</a></li>
+                <li><a href = "#">New Construction</a></li>
+                <li><a href = "#">Remodel</a></li>
+                <li><a href = "#">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <h1>Home</h1>
+    </main>
 
-<footer class="preventcollapse">
-    <div class = "row">
+    <footer class="preventcollapse">
+        <div class = "row">
         <section class="column small-12 medium-6 large-3">
             <h2>Home</h2>
         </section>
@@ -109,9 +67,9 @@ footer h2 {
         <section class="column small-12 medium-6 large-3">
             <h2>Contact Us</h2>
         </section>
+        </div><!--end of the footer row-->
+    </footer>
 
-
-    </div><!--end of the footer row-->
-</footer>
+    <script src="JS/menuToggle.js"></script>
 </body>
 </html>
