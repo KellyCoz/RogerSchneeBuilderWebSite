@@ -1,70 +1,140 @@
-       
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+       html {
+           -webkit-text-size-adjust: 100%;
+           -ms-text-size-adjust: 100%;
+       }
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+       * {
+           -moz-box-sizing: border-box;
+           -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+       }
 
-/* grid rule */
-.row {clear: both;} /*each row should stay below the content above it*/
+       /* grid rule */
 
-.column{float: left; margin: 0 0 .75rem 0; display:inline;} /*this makes them actual columns*/
 
-.small-12{width:100%;}
+       .small-12 {
+           width: 100%;
+       }
 
-/*header rules*/
+       /*header rules*/
 
-header {
-    background-color:red;
-}
-header h1 {
-    margin: 0;
-    color: white;
-    font-size: 2rem;
-    font-style: bold;
-}
+       header {
+           background-color: #000080;
+           display: flex;
+           flex-direction: row;
+       }
 
-main h1{color:black;}
+       header h1 {
+           letter-spacing: -.5px;
+           font-size: 2rem;
+           padding: 0;
+           margin: 1vw 0 0 2vw;
+       }
 
-footer {
-    background-color: red;
-    font-size: 1rem;
-    font-style: italic;
-    color: white;
-}
+       header h1,
+       h2 {
+           color: #13b3e4;
+           font-style: bold;
+           text-shadow: 1px 1px white;
+           border: none;
+       }
 
-footer h2 {
-   text-transform: uppercase;
-   text-align: center;
-   margin: 1rem 0 .3rem 0;
-}
+       header h2, h1 {
+           padding: 0 0 10px 0;
+           margin: 0 0 0 2vw;
+       }
 
-.preventcollapse:after {
-   content: "";
-   display: table;
-   clear: both;
+       header .column {
+           display: flex;
+           flex-direction: column;
+           margin: auto;
+       }
 
-}
+       main h1 {
+           color: #000080;
+       }
 
-button#hamburgerNav {
-   background: none;
-   border: none;
-   color: white;
-   font-size: 32px;
-   cursor: pointer;
-   padding: 0 30px 0 2vw;
-}
-nav {
-   background-color: grey;
-}
-nav ul {margin: 0; padding: 0;}
-nav ul li{list-style-type: none;}
-nav a{
-   display: block;
-   padding: 12px;
-   color: white;
-   text-decoration: none;
+       footer {
+           background-color: #000080;
+           font-size: 1rem;
+           color: white;
+       }
 
-}
-nav li.active {background-color: rgba(0,0,0,0.75);}
-nav a:hover{background-color: rgba(0,0,0,0.5);}
-nav ul.open{display: block;}
-nav ul {display: none;}
+       footer h2 {
+           text-transform: uppercase;
+           margin: 0;
+           border: 0;
+           padding: 1vw 0 .5vw 0;
+       }
+
+       footer>.row {
+           display: flex;
+           flex-direction: row;
+           flex-wrap:wrap;
+           border: none;
+           padding:0 0 1vw 0;
+           margin: 0;
+       }
+       footer p{
+           margin:2px;
+           padding:0;
+           border:0;
+       }
+
+       .footerOption {
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           align-content: flex-start;
+           padding: 0rem 2rem;
+           margin: 0;
+       }
+
+       button#hamburgerNav {
+           background: none;
+           border: none;
+           color: white;
+           font-size: 32px;
+           cursor: pointer;
+           padding: 0 30px 0 2vw;
+       }
+
+       nav {
+           background-color: #13b3e4;
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: row;
+           justify-content: space-between;
+
+       }
+
+       nav ul {
+           margin: 0;
+           padding: 0;
+       }
+
+       nav ul li {
+           list-style-type: none;
+           margin: 0 10px;
+       }
+
+       nav a {
+           color: white;
+           text-decoration: none;
+       }
+
+       nav li.active {
+           background-color: rgba(0, 0, 0, 0.25);
+       }
+
+       nav a:hover {
+           background-color: rgba(0, 0, 0, 0.1);
+       }
+
+       nav ul.open {
+           display: block;
+       }
+
+       nav ul {
+           display: none;
+       }

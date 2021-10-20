@@ -1,75 +1,152 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset = "UTF-8">
-    <link rel = "stylesheet" href = "CSS/small.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/small.css">
     <title>Roger Schnee Builder</title>
-    <meta name = "author" content="Roger Schnee">
-    <meta name = "description" content="Business page for Roger Schnee Builder">
-    <meta name = "viewport" content= "width = device-width, initial-scale=1">
+    <meta name="author" content="Roger Schnee">
+    <meta name="description" content="Business page for Roger Schnee Builder">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
     <style>
+        @media only screen and (min-width: 768px) {
 
-        
-        @media only screen and (min-width: 768px){
-        
-            .medium-6{width:50%;}
-            
-            nav button {display:none;} /*--hides the hamburger button at medium sized width --*/
-            nav ul {display: block;}
-            nav li {width: 25%; float: left;}
-        }
-        @media only screen and (min-width: 1024px){
-            .large-3 {width:25%}
+            .medium-6 {
+                width: 50%;
+            }
+            .medium-4 {
+                width: 33.333333%;
+                margin:0;
+                border: none;
+            }
 
-            nav ul{margin-left: 2vw;}
-            nav li{width: auto;}
-            nav a{padding: .7rem 1rem;}
+            nav button {
+                display: none;
+            }
+
+            /*--hides the hamburger button at medium sized width --*/
+
+            nav ul {
+                display: flex;
+            }
+
+            nav li {
+                width: 25%;
+
+            }
+
+            footer>.row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
         }
-        
-        
+
+        @media only screen and (min-width: 1024px) {
+            .large-3 {
+                width: 25%
+            }
+
+            nav>ul {
+                margin-left: 2vw;
+            }
+
+            nav li {
+                width: auto;
+                margin: 0 10px;
+            }
+
+            nav a {
+                padding: 1rem 1.25rem;
+            }
+
+        }
     </style>
 </head>
+
 <body>
-    <header class="preventcollapse">
+    <header>
         <div class="row limited">
-            <section class = "column small-12">
-                <h1>Roger Schnee Builder</h1>
-        </section>
+            <section class="column small-12">
+                <h1>ROGER SCHNEE BUILDERS</h1>
+                <h2>Milan, Ohio</h2>
+            </section>
         </div>
     </header>
-    <nav class ="preventcollapse">
-        <div class ="row limited">
+    <nav>
+        <div class="row limited">
             <button id="hamburgerNav">&#9776;</button>
             <ul id="listNav">
-                <li class="active"><a href = "#">Home</a></li>
-                <li><a href = "#">New Construction</a></li>
-                <li><a href = "#">Remodel</a></li>
-                <li><a href = "#">Contact us</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Construction</a></li>
+                <li><a href="#">Remodel</a></li>
+                <li><a href="#">Free Estimate</a></li>
             </ul>
         </div>
     </nav>
-    
+
     <main>
         <h1>Home</h1>
     </main>
 
-    <footer class="preventcollapse">
-        <div class = "row">
-        <section class="column small-12 medium-6 large-3">
-            <h2>Home</h2>
-        </section>
-        <section class="column small-12 medium-6 large-3">
-            <h2>New Construction</h2>
-        </section>
-        <section class="column small-12 medium-6 large-3">
-            <h2>Remodel</h2>
-        </section>
-        <section class="column small-12 medium-6 large-3">
-            <h2>Contact Us</h2>
-        </section>
-        </div><!--end of the footer row-->
+    <footer>
+        <div class="row">
+            <div class="column footerOption small-12 medium-4">
+                <h2>Contact</h2>
+                <p>Phone: (419) 706-5902</p>
+                <p>Email: RogerSchnee@gmail.com</p>
+            </div>
+            <div class="column footerOption small-12 medium-4">
+                <h2>Services</h2>
+                <p>Home Repairs</p>
+                <p>Construction</p>
+                <p>Remodels</p>
+                <p>Window Replacement</p>
+            </div>
+            <div class="column footerOption small-12 medium-4">
+                <h2>Service Areas</h2>
+                <p>Erie County</p>
+                <p>Huron County</p>
+                <p>Sandusky County</p>
+            </div>
+        </div>
     </footer>
+
+
+
+
+
+
+    <!--<footer>
+        <div class="row">
+            <section class="column small-12 medium-6 large-3">
+                <h2>Contact</h2>
+                <ul class="contact">
+                    <li><em>ph:</em>(419)706-5902</li>
+                    <li><em>email:</em>RogerSchnee@gmail.com</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Services</h2>
+                <ul class="services">
+                    <li>Handyman Repairs</li>
+                    <li>Remodels</li>
+                    <li>Window Replacement</li>
+                    <li>New Construction</li>
+                </ul>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Service Area</h2>
+            </section>
+            <section class="column small-12 medium-6 large-3">
+                <h2>Request Service</h2>
+            </section>
+        </div>
+        
+    </footer>-->
 
     <script src="JS/menuToggle.js"></script>
 </body>
+
 </html>
