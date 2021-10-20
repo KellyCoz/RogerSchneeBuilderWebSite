@@ -39,7 +39,8 @@
            border: none;
        }
 
-       header h2, h1 {
+       header h2,
+       h1 {
            padding: 0 0 10px 0;
            margin: 0 0 0 2vw;
        }
@@ -52,42 +53,6 @@
 
        main h1 {
            color: #000080;
-       }
-
-       footer {
-           background-color: #000080;
-           font-size: 1rem;
-           color: white;
-       }
-
-       footer h2 {
-           text-transform: uppercase;
-           margin: 0;
-           border: 0;
-           padding: 1vw 0 .5vw 0;
-       }
-
-       footer>.row {
-           display: flex;
-           flex-direction: row;
-           flex-wrap:wrap;
-           border: none;
-           padding:0 0 1vw 0;
-           margin: 0;
-       }
-       footer p{
-           margin:2px;
-           padding:0;
-           border:0;
-       }
-
-       .footerOption {
-           display: flex;
-           flex-direction: column;
-           align-items: flex-start;
-           align-content: flex-start;
-           padding: 0rem 2rem;
-           margin: 0;
        }
 
        button#hamburgerNav {
@@ -137,4 +102,100 @@
 
        nav ul {
            display: none;
+       }
+
+       .estimate {
+           display: flex;
+           flex-direction: column;
+           width: 60%;
+           align-items: center;
+           margin: auto;
+       }
+
+       .estimate h1 {
+           color: #000080;
+           text-shadow: 1px 2px #13b3e4;
+       }
+
+       form {
+           background-color: #a59e9e;
+           margin: auto;
+           width: 75%;
+           max-width: 40rem;
+       }
+
+       label {
+           display: block;
+           width: 100%;
+           padding: 1rem 1rem;
+       }
+
+       span {
+           font-size: .75rem;
+           color: black;
+       }
+
+       input,
+       textarea {
+           display: flex;
+           font-size: 1 rem;
+           padding: .75rem;
+           background-color: #F6F6F6;
+           border: 1px solid #bbb;
+           margin-top: .2rem;
+           width: 100%;
+
+       }
+
+       textarea {
+           min-height: 12rem;
+       }
+
+       footer {
+           background-color: #000080;
+           font-size: 1rem;
+           color: white;
+       }
+
+       footer h2 {
+           text-transform: uppercase;
+           margin: 0;
+           border: 0;
+           padding: 1vw 0 .5vw 0;
+       }
+
+       footer>.row {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           border: none;
+           padding: 0 0 1vw 0;
+           margin: 0;
+       }
+
+       footer p {
+           margin: 2px;
+           padding: 0;
+           border: 0;
+       }
+
+       .footerOption {
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           align-content: flex-start;
+           padding: 0rem 2rem;
+           margin: 0;
+       }
+
+
+
+       .bottomTrim {
+           display: flex;
+           height: 12px;
+           background-color: #13b3e4;
+       }
+
+       .backgroundFeature {
+           background-color: #F6F6F6;
        }
