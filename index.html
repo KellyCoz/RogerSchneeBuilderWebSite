@@ -3,66 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <title>Roger Schnee Builder</title>
     <meta name="author" content="Roger Schnee">
     <meta name="description" content="Business page for Roger Schnee Builder">
     <meta name="viewport" content="width = device-width, initial-scale=1">
-    <style>
-        @media only screen and (min-width: 768px) {
 
-            .medium-6 {
-                width: 50%;
-            }
-            .medium-4 {
-                width: 33.333333%;
-                margin:0;
-                border: none;
-            }
-
-            nav button {
-                display: none;
-            }
-
-            /*--hides the hamburger button at medium sized width --*/
-
-            nav ul {
-                display: flex;
-            }
-
-            nav li {
-                width: 25%;
-
-            }
-
-            footer>.row {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-        }
-
-        @media only screen and (min-width: 1024px) {
-            .large-3 {
-                width: 25%
-            }
-
-            nav>ul {
-                margin-left: 2vw;
-            }
-
-            nav li {
-                width: auto;
-                margin: 0 10px;
-            }
-
-            nav a {
-                padding: 1rem 1.25rem;
-            }
-
-        }
-    </style>
+    <script src="JS/main.js"></script>
 </head>
 
 <body>
@@ -78,16 +25,27 @@
         <div class="row limited">
             <button id="hamburgerNav">&#9776;</button>
             <ul id="listNav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Remodel</a></li>
-                <li><a href="#">Free Estimate</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="FreeEstimate.html">Free Estimate</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <h1>Home</h1>
+            <div class="row">
+                <div class="image column small-12 medium-6 large-3">
+                    <img src="Images/newConstruction.png" alt="New Home">
+                </div>
+                <div class="image column small-12 medium-6 large-3">
+                    <img src="Images/kitchenRemodel.png" alt="Kitchen Remodel">
+                </div>
+                <div class="image column small-12 medium-6 large-3">
+                    <img src="Images/roof.png" alt="Roofing Images">
+                </div>
+                <div class="image column small-12 medium-6 large-3">
+                    <img src="Images/handyman2.png" alt="Handyman Services">
+                </div>
+            </div>
     </main>
 
     <footer>
@@ -113,40 +71,6 @@
         </div>
     </footer>
 
-
-
-
-
-
-    <!--<footer>
-        <div class="row">
-            <section class="column small-12 medium-6 large-3">
-                <h2>Contact</h2>
-                <ul class="contact">
-                    <li><em>ph:</em>(419)706-5902</li>
-                    <li><em>email:</em>RogerSchnee@gmail.com</li>
-                </ul>
-            </section>
-            <section class="column small-12 medium-6 large-3">
-                <h2>Services</h2>
-                <ul class="services">
-                    <li>Handyman Repairs</li>
-                    <li>Remodels</li>
-                    <li>Window Replacement</li>
-                    <li>New Construction</li>
-                </ul>
-            </section>
-            <section class="column small-12 medium-6 large-3">
-                <h2>Service Area</h2>
-            </section>
-            <section class="column small-12 medium-6 large-3">
-                <h2>Request Service</h2>
-            </section>
-        </div>
-        
-    </footer>-->
-
-    <script src="JS/menuToggle.js"></script>
 </body>
 
 </html>

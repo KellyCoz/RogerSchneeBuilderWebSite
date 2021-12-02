@@ -3,69 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS/small.css">
+    <link rel="stylesheet" href="CSS/main.css">
     <title>Roger Schnee Builder</title>
     <meta name="author" content="Roger Schnee">
     <meta name="description" content="Business page for Roger Schnee Builder">
     <meta name="viewport" content="width = device-width, initial-scale=1">
-    <style>
-        @media only screen and (min-width: 768px) {
 
-            .medium-6 {
-                width: 50%;
-            }
-
-            .medium-4 {
-                width: 33.333333%;
-                margin: 0;
-                border: none;
-            }
-
-            nav button {
-                display: none;
-            }
-
-            /*--hides the hamburger button at medium sized width --*/
-
-            nav ul {
-                display: flex;
-            }
-
-            nav li {
-                width: 25%;
-
-            }
-
-            footer>.row {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-            }
-
-            
-
-        }
-
-        @media only screen and (min-width: 1024px) {
-            .large-3 {
-                width: 25%
-            }
-
-            nav>ul {
-                margin-left: 2vw;
-            }
-
-            nav li {
-                width: auto;
-                margin: 0 10px;
-            }
-
-            nav a {
-                padding: 1rem 1.25rem;
-            }
-
-        }
-    </style>
+    <script src="JS/main.js"></script>
+       
 </head>
 
 <body>
@@ -81,10 +26,8 @@
         <div class="row limited">
             <button id="hamburgerNav">&#9776;</button>
             <ul id="listNav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Remodel</a></li>
-                <li><a href="#">Free Estimate</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="FreeEstimate.html">Free Estimate</a></li>
             </ul>
         </div>
     </nav>
@@ -93,19 +36,21 @@
         <div class="backgroundFeature">
             <div class="estimate">
                 <h1>Request Free Estimate</h1>
-                <form method="get" action="thanks.html">
-                    <label>First Name<span>(required)</span><input type="text" name="name" required></label>
+                <form name="estimate" action="thanks.html" method="get" onclick="validateForm()">
+                    <label>Name<span>(required)</span><input type="text" name="name" placeholder="John Smith"required></label>
                     <label>Email Address<span>(required)</span><input type="email" name="email"
                             placeholder="someone@gmail.com" required></label>
                     <label>Phone<input type="tel" name="phone"></label>
                     <label>Requested Job Summary<textarea></textarea></label>
                     <input type="submit" value="Request My Estimate" class="submitBtn">
+                    
                 </form>
             </div>
         </div>
         <footer>
             <div class="bottomTrim"></div>
         </footer>
+        <script src="JS/main.js"></script>
     </main>
 
     <footer>
