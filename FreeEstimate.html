@@ -37,11 +37,11 @@
             <div class="estimate">
                 <h1>Request Free Estimate</h1>
                 <form name="estimate" action="thanks.html" method="get" onclick="validateForm()">
-                    <label>Name<span>(required)</span><input type="text" name="name" placeholder="John Smith"required></label>
-                    <label>Email Address<span>(required)</span><input type="email" name="email"
+                    <label id="name">Name<span>(required)</span><input type="text" name="name" placeholder="John Smith"required></label>
+                    <label id="email">Email Address<span>(required)</span><input type="email" name="email"
                             placeholder="someone@gmail.com" required></label>
-                    <label>Phone<input type="tel" name="phone"></label>
-                    <label>Requested Job Summary<textarea></textarea></label>
+                    <label id="phone">Phone<input type="tel" name="phone"></label>
+                    <label id="summary">Requested Job Summary<textarea></textarea></label>
                     <input type="submit" value="Request My Estimate" class="submitBtn">
                     
                 </form>

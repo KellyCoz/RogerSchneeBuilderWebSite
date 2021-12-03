@@ -10,8 +10,6 @@
        }
 
        /* grid rule */
-
-
        .small-12 {
            width: 100%;
        }
@@ -155,9 +153,9 @@
            background-color: rgba(0, 0, 0, 0.1);
        }
 
-       /*nav ul.open {
+       nav ul.open {
            display: block;
-       }*/
+       }
 
        ul {
            display: none;
