@@ -1,0 +1,43 @@
+action="thanks.html" method="get"
+
+/*function toggleMenu() {
+    document.getElementById("listNav").classList.toggle("open");
+}
+let x = document.getElementById('hamburgerNav');
+x.onclick = toggleMenu;*/
+
+hamburgerNav.onclick = function toggleMenu(){
+    document.getElementById("listNav").classList.toggle("open");
+};
+
+<script type="text/javascript">
+            const getName = document.getElementById("getName");
+            const estimateEmail = document.getElementById("estimateEmail");
+            const estimatePhone = document.getElementById("estimatePhone");
+            const btnInsert=document.getElementById("btnInsert");
+            
+            btnInsert.onclick = function () {
+                const email = estimateEmail.textContent;
+                const name = getName.innerText
+                const phone = estimatePhone.innerText;
+
+                console.log("email: "+ email);
+                console.log(name);
+                console.log(phone);
+
+
+                /*if (name && email && phone) {
+
+                    localStorage.setItem(name, email, phone);
+                    location.reload();
+                }
+
+                for (let i = 0; i < localStorage.length; i++) {
+                    const name = localStorage.name(i);
+                    const email = localStorage.getItem(name);
+                    const phone = localStorage.getItem(name);
+
+                    thankYou.innerHTML += '${name}: ${email}: ${phone}<br />';
+                }*/
+            };
+        </script>

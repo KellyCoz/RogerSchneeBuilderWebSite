@@ -10,7 +10,7 @@
     <meta name="viewport" content="width = device-width, initial-scale=1">
 
     <script src="JS/main.js"></script>
-       
+
 </head>
 
 <body>
@@ -36,21 +36,24 @@
         <div class="backgroundFeature">
             <div class="estimate">
                 <h1>Request Free Estimate</h1>
-                <form name="estimate" action="thanks.html" method="get" onclick="validateForm()">
-                    <label id="name">Name<span>(required)</span><input type="text" name="name" placeholder="John Smith"required></label>
-                    <label id="email">Email Address<span>(required)</span><input type="email" name="email"
+                <form name="estimate" action="thanks.html" method="GET">
+                    <label id="getName">Name<span>(required)</span><input type="text" name="name"
+                            placeholder="John Smith" required></label>
+                    <label id="estimateEmail">Email Address<span>(required)</span><input type="email" name="email"
                             placeholder="someone@gmail.com" required></label>
-                    <label id="phone">Phone<input type="tel" name="phone"></label>
-                    <label id="summary">Requested Job Summary<textarea></textarea></label>
-                    <input type="submit" value="Request My Estimate" class="submitBtn">
-                    
+                    <label id="estimatePhone">Phone<span>(required)</span><input type="tel" name="phone"
+                            required></label>
+                    <label id="estimateSummary">Requested Job Summary<textarea></textarea></label>
+                    <input type="submit" value="Request My Estimate" class="submitBtn" id="btnInsert">
+
                 </form>
+                <div class="message"></div>
             </div>
         </div>
         <footer>
             <div class="bottomTrim"></div>
         </footer>
-        <script src="JS/main.js"></script>
+
     </main>
 
     <footer>
@@ -75,3 +78,7 @@
             </div>
         </div>
     </footer>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
