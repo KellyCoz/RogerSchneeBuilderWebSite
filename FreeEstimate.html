@@ -36,16 +36,20 @@
         <div class="backgroundFeature">
             <div class="estimate">
                 <h1>Request Free Estimate</h1>
-                <form name="estimate" action="thanks.html" method="GET">
-                    <label id="getName">Name<span>(required)</span><input type="text" name="name"
-                            placeholder="John Smith" required></label>
-                    <label id="estimateEmail">Email Address<span>(required)</span><input type="email" name="email"
-                            placeholder="someone@gmail.com" required></label>
-                    <label id="estimatePhone">Phone<span>(required)</span><input type="tel" name="phone"
-                            required></label>
-                    <label id="estimateSummary">Requested Job Summary<textarea></textarea></label>
-                    <input type="submit" value="Request My Estimate" class="submitBtn" id="btnInsert">
+                <div class="estimateDetails">
+                    <form name="estimate" action="thanks.html" method="GET">
+                        <label id="getName">Name<span> (required)</span><input type="text" name="name"
+                                placeholder="John Smith" required></label>
+                        <label id="estimateEmail">Email Address<span> (required)</span><input type="email" name="email"
+                                placeholder="someone@gmail.com" required></label>
+                        <label id="estimatePhone">Phone<span> (required)</span><input type="tel" name="phone"
+                                placeholder="###-###-####"required></label>
+                        <label id="estimateSummary">Requested Job Summary<textarea></textarea></label>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Request My Estimate" class="submitBtn">
 
+                </div>
                 </form>
             </div>
         </div>
