@@ -14,4 +14,16 @@ This site was developed using a mobile first design. To accomplish this, the web
 
 ## CSS
 
+There are several classes used in main .css which are used to achieve desired styling but also dynamically display behavior as the screen sizes change.
+
+.medium-6, .medium-4, .large-3 are all used to change the width each container fills. The numbers are based on assuming you might have as many as 12 columns displayed in a single line, and the -# indicates how many of those 12 columns the class should use. For example, .medium-6 has a width of 50% since that particular item will display as a column taking 6 of 12 available columns, 50%. Similarly, .medium-4 has a width of 33.333%, .large-3 has width 25%.
+
+Other classes used for spacing, coloring, alignment, etc. include but are not limited to .thankyou, .row, .estimate, .submitbtn.
+
 ## JavaScript
+
+There are two javascript files used to achieve the web site's functionality.
+
+toggleMenu.js is a file used when the navigation is concealed under the hamburger button (as determined by the small screen media query). The menu appears in a list after a click event triggers the class to change to "open", which will changes the nav ul elements to display as block.
+
+thanks.js contains the code that will grab the parameters filled in by the user on estimate.html from the URL and post the information in a thank you message on thanks.html.

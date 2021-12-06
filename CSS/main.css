@@ -165,34 +165,13 @@
            display: none;
        }
 
-       .thankyou {
-           width: 50%;
-           display: flex;
-           flex-direction: column;
-       }
 
-       .thankyou>img {
-           padding: 20px 0 20px 0;
-           width: 80%;
-           height: auto;
-           max-width: 500px;
-       }
 
-       img {
-           width: 100%;
-           height: auto;
-           margin: 0;
-           border: 0;
-           padding: 0;
-       }
 
        main>.row {
            display: flex;
            flex-direction: row;
            flex-wrap: wrap;
-           border: none;
-           padding: 0 0 1vw 0;
-           margin: 0;
        }
 
        .estimate {
@@ -217,6 +196,21 @@
            align-items: center;
        }
 
+       .thankyou>img {
+           padding: 20px 0 20px 0;
+           width: 80%;
+           height: auto;
+           max-width: 500px;
+       }
+
+       img {
+           width: 100%;
+           height: auto;
+           margin: auto;
+           border: 0;
+           padding: 0;
+       }
+
        .estimate h1 {
            color: #000080;
            text-shadow: 1px 2px #13b3e4;
@@ -236,7 +230,7 @@
            width: 100%;
        }
 
-       span{
+       span {
            font-style: italic;
        }
 
@@ -245,9 +239,11 @@
            width: 100%;
            padding: 1rem 1rem;
        }
-       input, textarea{
-        border-style: solid;
-        border-radius: 10px;
+
+       input,
+       textarea {
+           border-style: solid;
+           border-radius: 10px;
        }
 
        span {
@@ -303,10 +299,11 @@
            background: white;
        }
 
-       #message{
-           padding:15px;
+       #message {
+           padding: 15px;
        }
-       .thankyou{
+
+       .thankyou {
            padding: 0 0 10px 0;
        }
 
@@ -347,14 +344,8 @@
            margin: 0;
        }
 
-
-
        .bottomTrim {
            display: flex;
            height: 12px;
            background-color: #13b3e4;
-       }
-
-       /* .backgroundFeature {
-           background-color: #F6F6F6;
        }
